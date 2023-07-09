@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Diary</string>
+    <string name="input_search_word">검색어를 입력하세요</string>
+    <string name="search">검색</string>
 </resources>
