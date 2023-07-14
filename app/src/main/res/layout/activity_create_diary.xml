@@ -13,10 +13,11 @@
         android:layout_height="wrap_content"
         android:text="@string/write_diary"
         android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- 작성 버튼 -->
     <Button
