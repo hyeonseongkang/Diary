@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateDiaryActivity">
+    tools:context=".view.activity.CreateDiaryActivity">
 
     <!-- 다이어리 작성 텍스트 -->
     <TextView
@@ -53,6 +53,7 @@
         android:inputType="textMultiLine"
         android:maxLines="100"
         android:background="@null"
+        android:gravity="top"
         app:layout_constraintTop_toBottomOf="@id/v_divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

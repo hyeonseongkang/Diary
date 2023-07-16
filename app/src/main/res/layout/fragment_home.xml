@@ -35,6 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_input" />
 
     <ImageView
+        android:id="@+id/btn_create_diary"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/ic_diary_add_button"

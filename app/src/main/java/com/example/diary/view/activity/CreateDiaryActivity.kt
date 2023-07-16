@@ -1,7 +1,8 @@
-package com.example.diary
+package com.example.diary.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.diary.R
 
 class CreateDiaryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
