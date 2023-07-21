@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.diary.databinding.ActivityMainBinding
-import com.example.diary.view.fragment.CalendarFragment
-import com.example.diary.view.fragment.HomeFragment
-import com.example.diary.view.fragment.SettingFragment
+import com.example.diary.ui.fragment.CalendarFragment
+import com.example.diary.ui.fragment.HomeFragment
+import com.example.diary.ui.fragment.SettingFragment
 
 class MainActivity : AppCompatActivity() {
 

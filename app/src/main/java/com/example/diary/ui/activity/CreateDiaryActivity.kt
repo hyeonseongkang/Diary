@@ -1,4 +1,4 @@
-package com.example.diary.view.activity
+package com.example.diary.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

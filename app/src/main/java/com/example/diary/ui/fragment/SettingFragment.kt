@@ -1,4 +1,4 @@
-package com.example.diary.view.fragment
+package com.example.diary.ui.fragment
 
 import androidx.fragment.app.Fragment
 

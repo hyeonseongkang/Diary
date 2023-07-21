@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.CreateDiaryActivity">
+    tools:context=".ui.activity.CreateDiaryActivity">
 
     <!-- 다이어리 작성 텍스트 -->
     <TextView
