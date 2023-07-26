@@ -42,4 +42,43 @@ class EditDiaryActivity : AppCompatActivity() {
 
         })
     }
+
+    fun getMyDiaryContainingWord(searchWord: String) {
+        myRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val matchingDiaries = mutableListOf<Diary>()
+
+                for (diarySnapshot in snapshot.children) {
+                    val diary: Diary? = diarySnapshot.getValue(Diary::class.java)
+                    diary?.let {
+                        if (it.diary.contains(searchWord)) {
+                            matchingDiaries.add(it)
+                        }
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+            }
+        })
+    }
+
+    fun getAllDiaries() {
+        myRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val allDiaries = mutableListOf<Diary>()
+
+                for (diarySnapshot in snapshot.children) {
+                    val diary: Diary? = diarySnapshot.getValue(Diary::class.java)
+                    diary?.let {
+                        allDiaries.add(it)
+                    }
+                }
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+            }
+        })
+    }
 }
