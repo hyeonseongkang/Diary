@@ -66,4 +66,9 @@ class DrawView @JvmOverloads constructor(
         points.clear()
         invalidate()
     }
+
+    fun setLineColor(color: Int) {
+        paint.color = color
+        invalidate()
+    }
 }
