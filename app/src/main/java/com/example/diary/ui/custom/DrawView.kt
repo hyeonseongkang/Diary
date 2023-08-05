@@ -71,4 +71,8 @@ class DrawView @JvmOverloads constructor(
         paint.color = color
         invalidate()
     }
+
+    fun getPoints(): ArrayList<Point> {
+        return points
+    }
 }

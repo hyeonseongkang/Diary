@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.EditDiaryActivity">
 
+
     <EditText
         android:id="@+id/editTextTitle"
         android:layout_width="0dp"
@@ -28,15 +29,24 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         android:hint="content"
         android:inputType="textMultiLine"
         android:minLines="10"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/buttonSave"
+        app:layout_constraintBottom_toTopOf="@id/drawView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTitle" />
+
+    <com.example.diary.ui.custom.DrawView
+        android:id="@+id/drawView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextContent" />
 
     <Button
         android:id="@+id/buttonSave"
