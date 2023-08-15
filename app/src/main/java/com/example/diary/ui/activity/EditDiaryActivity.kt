@@ -30,7 +30,7 @@ class EditDiaryActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.saveButton.setOnClickListener {  // Replace "saveButton" with your save button id in XML file
+        binding.buttonSave.setOnClickListener {  // Replace "saveButton" with your save button id in XML file
             saveDrawing()
         }
 
